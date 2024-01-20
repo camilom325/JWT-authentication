@@ -17,29 +17,38 @@ Make sure you have the following prerequisites installed before running the appl
   `git clone https://github.com/your-username/spring-boot-jwt-mongodb.git`
 
 2. Configure the MongoDB connection in the application.properties file:
+   
    `spring.data.mongodb.uri= YOUR MONGO URI`
+   
    `spring.data.mongodb.database= YOUR DB`
-3. execute the project with SpringBoot dashboard or VSCode debug
+   
+5. execute the project with SpringBoot dashboard or VSCode debug
   
-4. Use postman to test the endpoints:
+6. Use postman to test the endpoints:
 
--> register a new user on localhost 8080: POST `http://localhost:8080/auth/register`
-
-  body ex:
-
-  {
-    "username": "Test1",
-    "firstName": "John",
-    "lastName": "Doe",
-    "password": "12345"
-  }
-
--> register a new user on localhost 8080: POST `http://localhost:8080/auth/login`
+* register a new user on localhost 8080: POST `http://localhost:8080/auth/register`
 
   body ex:
 
-  {
-    "username": "Test1",
-    "password": "12345"
-  }
+{   
+
+ 
+"username": "Test1",    
+"firstName": "John",    
+"lastName": "Doe",    
+"password": "12345"  
+
+}
+
+* register a new user on localhost 8080: POST `http://localhost:8080/auth/login`
+
+  body ex:
+
+{   
+
+ 
+"username": "Test1",      
+"password": "12345"  
+
+}
 
